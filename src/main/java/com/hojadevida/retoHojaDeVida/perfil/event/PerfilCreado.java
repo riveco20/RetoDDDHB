@@ -2,12 +2,15 @@ package com.hojadevida.retoHojaDeVida.perfil.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import com.hojadevida.retoHojaDeVida.perfil.valueobject.InformacionDeContacto;
+import com.hojadevida.retoHojaDeVida.perfil.valueobject.NombreCompleto;
 
-public class InformacionDeContactoReferenciaActualizada extends DomainEvent {
+public class PerfilCreado extends DomainEvent {
+
     private final InformacionDeContacto informacionDeContacto;
-    public InformacionDeContactoReferenciaActualizada(InformacionDeContacto informacionDeContacto) {
-        super("hojadevida.perfil.informacionDeContacoReferenciaActualizada");
-        this.informacionDeContacto =informacionDeContacto;
+
+    public PerfilCreado(InformacionDeContacto informacionDeContacto) {
+        super("hojadevida.perfil.perfilcreado");
+        this.informacionDeContacto=informacionDeContacto;
     }
 
     public InformacionDeContacto getInformacionDeContacto() {

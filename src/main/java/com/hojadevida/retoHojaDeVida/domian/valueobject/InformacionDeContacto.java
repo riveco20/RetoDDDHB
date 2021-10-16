@@ -1,4 +1,4 @@
-package com.hojadevida.retoHojaDeVida.perfil.valueobject;
+package com.hojadevida.retoHojaDeVida.domian.valueobject;
 
 import co.com.sofka.domain.generic.ValueObject;
 

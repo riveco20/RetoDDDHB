@@ -1,8 +1,8 @@
-package com.hojadevida.retoHojaDeVida.perfil.command;
+package com.hojadevida.retoHojaDeVida.domian.command;
 
 import co.com.sofka.domain.generic.Command;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.FotoPerfil;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.PerfilId;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.FotoPerfil;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.PerfilId;
 
 public class ActualizarFotoPerfil extends Command {
     private final PerfilId perfilId;

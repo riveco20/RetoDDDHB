@@ -1,10 +1,10 @@
-package com.hojadevida.retoHojaDeVida.perfil;
+package com.hojadevida.retoHojaDeVida.domian;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import com.hojadevida.retoHojaDeVida.perfil.entity.Referencia;
-import com.hojadevida.retoHojaDeVida.perfil.event.*;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.*;
+import com.hojadevida.retoHojaDeVida.domian.entity.Referencia;
+import com.hojadevida.retoHojaDeVida.domian.event.*;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.*;
 
 import java.util.List;
 import java.util.Objects;
@@ -58,15 +58,17 @@ public class Perfil extends AggregateEvent<PerfilId> {
     }
 
 
-    public void actualizarNombreCompletoReferencia(NombreCompleto nombreCompleto){
+    public void actualizarNombreCompletoReferencia(ReferenciaId referenciaId,NombreCompleto nombreCompleto){
+        Objects.requireNonNull(referenciaId);
         Objects.requireNonNull(nombreCompleto);
-        appendChange(new NombreCompletoReferenciaActualizado(nombreCompleto)).apply();
+        appendChange(new NombreCompletoReferenciaActualizado(referenciaId,nombreCompleto)).apply();
 
     }
 
-    public void actualizarInformacionDeContactoReferencia(InformacionDeContacto informacionDeContacto){
+    public void actualizarInformacionDeContactoReferencia(ReferenciaId referenciaId,InformacionDeContacto informacionDeContacto){
+        Objects.requireNonNull(referenciaId);
         Objects.requireNonNull(informacionDeContacto);
-        appendChange(new InformacionDeContactoReferenciaActualizada(informacionDeContacto)).apply();
+        appendChange(new InformacionDeContactoReferenciaActualizada(referenciaId,informacionDeContacto)).apply();
 
     }
 

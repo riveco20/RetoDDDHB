@@ -1,8 +1,9 @@
-package com.hojadevida.retoHojaDeVida.perfil;
+package com.hojadevida.retoHojaDeVida.domian;
 
 import co.com.sofka.domain.generic.EventChange;
-import com.hojadevida.retoHojaDeVida.perfil.entity.Referencia;
-import com.hojadevida.retoHojaDeVida.perfil.event.*;
+import com.hojadevida.retoHojaDeVida.domian.entity.Referencia;
+import com.hojadevida.retoHojaDeVida.domian.event.*;
+
 
 public class PerfilChange extends EventChange {
     public PerfilChange(Perfil perfil){

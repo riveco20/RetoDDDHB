@@ -1,7 +1,7 @@
-package com.hojadevida.retoHojaDeVida.perfil.event;
+package com.hojadevida.retoHojaDeVida.domian.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.InformacionDeContacto;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.InformacionDeContacto;
 
 public class InformacionDeContactoActualizado extends DomainEvent {
 

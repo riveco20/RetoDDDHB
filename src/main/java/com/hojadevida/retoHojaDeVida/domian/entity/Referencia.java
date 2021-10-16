@@ -1,9 +1,9 @@
-package com.hojadevida.retoHojaDeVida.perfil.entity;
+package com.hojadevida.retoHojaDeVida.domian.entity;
 
 import co.com.sofka.domain.generic.Entity;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.InformacionDeContacto;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.NombreCompleto;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.ReferenciaId;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.InformacionDeContacto;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.NombreCompleto;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.ReferenciaId;
 
 import java.util.Objects;
 

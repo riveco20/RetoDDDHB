@@ -1,10 +1,9 @@
-package com.hojadevida.retoHojaDeVida.perfil.event;
+package com.hojadevida.retoHojaDeVida.domian.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.FotoPerfil;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.HojaDeVidaId;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.InformacionDeContacto;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.NombreCompleto;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.FotoPerfil;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.HojaDeVidaId;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.InformacionDeContacto;
 
 public class PerfilCreado extends DomainEvent {
 

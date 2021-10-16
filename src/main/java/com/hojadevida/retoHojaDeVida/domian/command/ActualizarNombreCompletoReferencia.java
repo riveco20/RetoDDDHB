@@ -1,8 +1,8 @@
-package com.hojadevida.retoHojaDeVida.perfil.command;
+package com.hojadevida.retoHojaDeVida.domian.command;
 
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.NombreCompleto;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.PerfilId;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.ReferenciaId;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.NombreCompleto;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.PerfilId;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.ReferenciaId;
 
 public class ActualizarNombreCompletoReferencia {
     private final PerfilId perfilId;

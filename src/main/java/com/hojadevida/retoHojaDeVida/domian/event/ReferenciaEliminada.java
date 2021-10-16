@@ -1,17 +1,17 @@
-package com.hojadevida.retoHojaDeVida.perfil.event;
+package com.hojadevida.retoHojaDeVida.domian.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.InformacionDeContacto;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.NombreCompleto;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.ReferenciaId;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.InformacionDeContacto;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.NombreCompleto;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.ReferenciaId;
 
-public class ReferenciaAgregada extends DomainEvent {
+public class ReferenciaEliminada extends DomainEvent {
     private final ReferenciaId referenciaId;
     private final InformacionDeContacto informacionDeContacto;
     private final NombreCompleto nombreCompleto;
 
-    public ReferenciaAgregada(ReferenciaId referenciaId, InformacionDeContacto informacionDeContacto, NombreCompleto nombreCompleto) {
-        super("hojadevida.perfil.nuevareferenciaagregada");
+    public ReferenciaEliminada(ReferenciaId referenciaId, InformacionDeContacto informacionDeContacto, NombreCompleto nombreCompleto) {
+        super("hojadevida.perfil.referenciaeliminada");
         this.referenciaId = referenciaId;
         this.informacionDeContacto = informacionDeContacto;
         this.nombreCompleto = nombreCompleto;

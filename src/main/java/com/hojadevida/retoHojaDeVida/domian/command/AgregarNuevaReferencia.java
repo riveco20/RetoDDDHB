@@ -1,11 +1,12 @@
-package com.hojadevida.retoHojaDeVida.perfil.command;
+package com.hojadevida.retoHojaDeVida.domian.command;
 
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.InformacionDeContacto;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.NombreCompleto;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.PerfilId;
-import com.hojadevida.retoHojaDeVida.perfil.valueobject.ReferenciaId;
+import co.com.sofka.domain.generic.Command;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.InformacionDeContacto;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.NombreCompleto;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.PerfilId;
+import com.hojadevida.retoHojaDeVida.domian.valueobject.ReferenciaId;
 
-public class AgregarNuevaReferencia {
+public class AgregarNuevaReferencia extends Command {
     private final PerfilId perfilId;
    private final ReferenciaId referenciaId;
    private final InformacionDeContacto informacionDeContacto;

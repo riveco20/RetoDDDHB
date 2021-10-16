@@ -17,7 +17,7 @@ public class Referencia extends Entity<ReferenciaId> {
         this.informacionDeContacto = informacionDeContacto;
         this.nombreCompleto = nombreCompleto;
     }
-    public void actualizarInformacionDeContacto(InformacionDeContacto informacionDeContacto){
+    public void actualizarInformacionDeContacto(InformacionDeContacto informacionDeContacto) {
 
         this.informacionDeContacto = Objects.requireNonNull(informacionDeContacto);
 

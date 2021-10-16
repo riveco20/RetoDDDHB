@@ -18,12 +18,13 @@ public class Perfil extends AggregateEvent<PerfilId> {
         appendChange(new PerfilCreado(informacionDeContacto)).apply();
     }
 
-    public void agregarNuevaReferencia(ReferenciaId entityId, InformacionDeContacto informacionDeContacto, NombreCompleto nombreCompleto){
 
-        Objects.requireNonNull(entityId);
+
+    public void agregarNuevaReferencia(ReferenciaId referenciaId, InformacionDeContacto informacionDeContacto, NombreCompleto nombreCompleto){
+        Objects.requireNonNull(referenciaId);
         Objects.requireNonNull(informacionDeContacto);
         Objects.requireNonNull(nombreCompleto);
-       // appendChange(new ReferenciaAgregada(entityId,informacionDeContacto,nombreCompleto)).apply();
+       appendChange(new ReferenciaAgregada(referenciaId,informacionDeContacto,nombreCompleto)).apply();
 
 
     }
@@ -33,23 +34,28 @@ public class Perfil extends AggregateEvent<PerfilId> {
     }
 
     public void actualizarInformacionDeContacto(InformacionDeContacto informacionDeContacto){
-
+        Objects.requireNonNull(informacionDeContacto);
         appendChange(new InformacionDeContactoActualizado(informacionDeContacto)).apply();
 
     }
 
     public void actualizarForoPerfil(FotoPerfil fotoPerfil){
+            Objects.requireNonNull(fotoPerfil);
             appendChange(new FotoDePerfilActualizada(fotoPerfil)).apply();
     }
 
 
-    public void actualizarNombreCompletoReferencia(NombreCompleto nombreCompleto){
-        appendChange(new NombreCompletoReferenciaActualizado(nombreCompleto)).apply();
+    public void actualizarNombreCompletoReferencia(ReferenciaId referenciaId, NombreCompleto nombreCompleto){
+        Objects.requireNonNull(referenciaId);
+        Objects.requireNonNull(nombreCompleto);
+        appendChange(new NombreCompletoReferenciaActualizado(referenciaId, nombreCompleto)).apply();
 
     }
 
-    public void actualizarInformacionDeContactoReferencia(InformacionDeContacto informacionDeContacto){
-        appendChange(new InformacionDeContactoReferenciaActualizada(informacionDeContacto)).apply();
+    public void actualizarInformacionDeContactoReferencia(ReferenciaId referenciaId,InformacionDeContacto informacionDeContacto){
+        Objects.requireNonNull(referenciaId);
+        Objects.requireNonNull(informacionDeContacto);
+        appendChange(new InformacionDeContactoReferenciaActualizada(referenciaId,informacionDeContacto)).apply();
 
     }
 

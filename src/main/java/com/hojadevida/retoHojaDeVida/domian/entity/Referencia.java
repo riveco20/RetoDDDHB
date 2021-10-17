@@ -9,6 +9,7 @@ import java.util.Objects;
 
 public class Referencia extends Entity<ReferenciaId> {
 
+    private ReferenciaId referenciaId;
     private InformacionDeContacto informacionDeContacto;
     private NombreCompleto nombreCompleto;
 
@@ -17,6 +18,7 @@ public class Referencia extends Entity<ReferenciaId> {
         this.informacionDeContacto = informacionDeContacto;
         this.nombreCompleto = nombreCompleto;
     }
+
     public void actualizarInformacionDeContacto(InformacionDeContacto informacionDeContacto) {
 
         this.informacionDeContacto = Objects.requireNonNull(informacionDeContacto);
@@ -25,6 +27,10 @@ public class Referencia extends Entity<ReferenciaId> {
 
     public void actualizarNombreCompleto(NombreCompleto nombreCompleto){
         this.nombreCompleto = Objects.requireNonNull(nombreCompleto);
+    }
+
+    public ReferenciaId getReferenciaId() {
+        return referenciaId;
     }
 
     public InformacionDeContacto getInformacionDeContacto() {

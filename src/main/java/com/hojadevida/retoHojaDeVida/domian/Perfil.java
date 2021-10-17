@@ -30,6 +30,7 @@ public class Perfil extends AggregateEvent<PerfilId> {
         var perfil = new Perfil(perfilId);
         events.forEach(perfil::applyEvent);
         return perfil;
+
     }
 
     public void agregarNuevaReferencia(ReferenciaId referenciaId, InformacionDeContacto informacionDeContacto, NombreCompleto nombreCompleto){

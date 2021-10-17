@@ -5,6 +5,7 @@ import com.hojadevida.retoHojaDeVida.domian.valueobject.InformacionDeContacto;
 import com.hojadevida.retoHojaDeVida.domian.valueobject.NombreCompleto;
 import com.hojadevida.retoHojaDeVida.domian.valueobject.ReferenciaId;
 
+
 public class ReferenciaAgregada extends DomainEvent {
     private final ReferenciaId referenciaId;
     private final InformacionDeContacto informacionDeContacto;

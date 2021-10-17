@@ -14,7 +14,7 @@ public class InformacionDeContacto implements ValueObject<String> {
             throw new IllegalArgumentException("La informacion de contacto no debe estar vacia");
         }
 
-        if (this.value.length() <= 8) {
+        if (this.value.length() <= 2) {
             throw new IllegalArgumentException("la informacion de contacto debe tener mas caracteres ");
         }
     }

@@ -8,8 +8,8 @@ public class NombreCompleto implements ValueObject<String> {
 
     private final String value;
 
-    public NombreCompleto(String nombre , String apllido) {
-        this.value = Objects.requireNonNull(nombre + apllido);
+    public NombreCompleto(String value) {
+        this.value = Objects.requireNonNull(value);
         if(this.value.isBlank()){
             throw new IllegalArgumentException("debes ingresar un nombre y apellido");
         }

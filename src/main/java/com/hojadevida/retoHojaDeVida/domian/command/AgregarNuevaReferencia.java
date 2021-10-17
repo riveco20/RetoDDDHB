@@ -7,6 +7,7 @@ import com.hojadevida.retoHojaDeVida.domian.valueobject.PerfilId;
 import com.hojadevida.retoHojaDeVida.domian.valueobject.ReferenciaId;
 
 public class AgregarNuevaReferencia extends Command {
+
     private final PerfilId perfilId;
    private final ReferenciaId referenciaId;
    private final InformacionDeContacto informacionDeContacto;

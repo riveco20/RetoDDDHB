@@ -58,10 +58,9 @@ public class Perfil extends AggregateEvent<PerfilId> {
     }
 
 
-    public void actualizarNombreCompletoReferencia(ReferenciaId referenciaId,NombreCompleto nombreCompleto){
-        Objects.requireNonNull(referenciaId);
+    public void actualizarNombreCompletoReferencia(NombreCompleto nombreCompleto){
         Objects.requireNonNull(nombreCompleto);
-        appendChange(new NombreCompletoReferenciaActualizado(referenciaId,nombreCompleto)).apply();
+        appendChange(new NombreCompletoReferenciaActualizado(nombreCompleto)).apply();
 
     }
 

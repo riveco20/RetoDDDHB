@@ -30,7 +30,7 @@ public class PerfilChange extends EventChange {
          });
 
          apply((InformacionDeContactoReferenciaActualizada event)->{
-            perfil.referencia.actualizarInformacionDeContacto(event.getInformacionDeContacto());
+             perfil.referencia.actualizarInformacionDeContacto(event.getInformacionDeContacto());
                      });
 
          apply((NombreCompletoReferenciaActualizado event)->{

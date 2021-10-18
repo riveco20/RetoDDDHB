@@ -39,12 +39,6 @@ public class Perfil extends AggregateEvent<PerfilId> {
         appendChange(new ReferenciaAgregada(referenciaId,informacionDeContacto,nombreCompleto)).apply();
     }
 
-    public void eliminarReferencia(ReferenciaId referenciaId, InformacionDeContacto informacionDeContacto, NombreCompleto nombreCompleto){
-        Objects.requireNonNull(referenciaId);
-        Objects.requireNonNull(informacionDeContacto);
-        Objects.requireNonNull(nombreCompleto);
-        appendChange(new ReferenciaEliminada(referenciaId, informacionDeContacto , nombreCompleto)).apply();
-    }
 
     public void actualizarInformacionDeContacto(InformacionDeContacto informacionDeContacto){
         Objects.requireNonNull(informacionDeContacto);

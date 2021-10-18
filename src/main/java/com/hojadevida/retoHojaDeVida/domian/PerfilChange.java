@@ -37,9 +37,6 @@ public class PerfilChange extends EventChange {
               perfil.referencia.actualizarNombreCompleto(event.getNombreCompleto());
          });
 
-         apply((ReferenciaEliminada event)->{;
-
-         });
 
 
     }
